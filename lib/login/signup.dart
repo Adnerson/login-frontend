@@ -74,7 +74,7 @@ class _SignUpState extends State<SignUp> with Func {
                 onPressed: () {
                   if (_formKey.currentState?.validate() ?? false) {
                     signUp(context, _usernameController.text, _emailController.text, _passwordController.text);
-                    Navigator.pushNamed(context, '/login');
+                    Navigator.pushReplacementNamed(context, '/login');
                   }
                 },
                 child: const Text('Sign Up'),
